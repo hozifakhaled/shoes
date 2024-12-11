@@ -1,2 +1,2 @@
 const onBoarding='/';
-const homeView='homeView';
+const bottomnav='bottomnav';
