@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:shoes/Feature/home/views/home_view.dart';
-
 import 'package:shoes/Feature/onboarding/views/onboardingPage.dart';
 import 'package:shoes/core/routing/routes.dart';
+import 'package:shoes/core/widgets/bottom_nav.dart';
 
 class AppRouting {
   
@@ -13,10 +12,10 @@ class AppRouting {
           builder:
               (_) => const Onboardingpage(),
         );
-        case homeView:
+        case bottomnav:
         return MaterialPageRoute(
           builder:
-              (_) => const HomeView(),
+              (_) => const BottomNav(),
         );
       default:
     }

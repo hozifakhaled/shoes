@@ -38,7 +38,7 @@ class Containergohome extends StatelessWidget {
              borderRadius: BorderRadius.circular(40) 
             ),
             child:IconButton(onPressed: (){
-              Navigator.pushNamed(context, homeView);
+              Navigator.pushNamed(context, bottomnav);
             }, icon:  Icon(Icons.arrow_forward)),
             ),
           ],
