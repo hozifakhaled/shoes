@@ -11,8 +11,8 @@ class Containergohome extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      width: getMediaQuery(context).width * .7 ,
-      height: getMediaQuery(context).height * .1 ,
+      width: context.width * .7 ,
+      height: context.height * .1 ,
      
       decoration: BoxDecoration(
          color: Colors.black,

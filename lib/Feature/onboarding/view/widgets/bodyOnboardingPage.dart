@@ -26,8 +26,8 @@ class Bodyonboardingpage extends StatelessWidget {
             height: 30.h,
           ),
           Container(
-              width: getMediaQuery(context).width * .7,
-              height: getMediaQuery(context).height * .4,
+              width: context.width * .7,
+              height: context.height * .4,
               decoration: BoxDecoration(
                   color: Color(0xffFFFFFFEFEFEF),
                   borderRadius: BorderRadius.circular(30)),
