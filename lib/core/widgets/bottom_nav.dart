@@ -1,5 +1,3 @@
-// ignore_for_file: library_private_types_in_public_api
-
 import 'package:flutter/material.dart';
 import 'package:shoes/Feature/home/views/home_view.dart';
 
@@ -12,7 +10,6 @@ class BottomNav extends StatefulWidget {
 
 class _BottomNavState extends State<BottomNav> {
   int _currentIndex = 0;
-
 
   final List<Widget> _pages = [
     const HomeView(),
@@ -30,35 +27,38 @@ class _BottomNavState extends State<BottomNav> {
           topLeft: Radius.circular(20),
           topRight: Radius.circular(20),
         ),
-        child: BottomNavigationBar(
-          backgroundColor: Colors.white,
-          type: BottomNavigationBarType.fixed,
-          selectedItemColor: Colors.black,
-          unselectedItemColor: Colors.grey,
-          currentIndex: _currentIndex, 
-          onTap: (index) {
-            setState(() {
-              _currentIndex = index; 
-            });
-          },
-          items: const [
-            BottomNavigationBarItem(
-              icon: Icon(Icons.home),
-              label: '', 
-            ),
-            BottomNavigationBarItem(
-              icon: Icon(Icons.shopping_bag_outlined),
-              label: '', 
-            ),
-            BottomNavigationBarItem(
-              icon: Icon(Icons.payment),
-              label: '',    
-            ),
-            BottomNavigationBarItem(
-              icon: Icon(Icons.perm_contact_cal_outlined),
-              label: '', 
-            ),
-          ],
+        child: PreferredSize(
+          preferredSize: const Size.fromHeight(40),  // تصغير الارتفاع هنا
+          child: BottomNavigationBar(
+            backgroundColor: Colors.white,
+            type: BottomNavigationBarType.fixed,
+            selectedItemColor: Colors.black,
+            unselectedItemColor: Colors.grey,
+            currentIndex: _currentIndex, 
+            onTap: (index) {
+              setState(() {
+                _currentIndex = index; 
+              });
+            },
+            items: const [
+              BottomNavigationBarItem(
+                icon: Icon(Icons.home),
+                label: '', 
+              ),
+              BottomNavigationBarItem(
+                icon: Icon(Icons.shopping_bag_outlined),
+                label: '', 
+              ),
+              BottomNavigationBarItem(
+                icon: Icon(Icons.payment),
+                label: '',    
+              ),
+              BottomNavigationBarItem(
+                icon: Icon(Icons.perm_contact_cal_outlined),
+                label: '', 
+              ),
+            ],
+          ),
         ),
       ),
     );
