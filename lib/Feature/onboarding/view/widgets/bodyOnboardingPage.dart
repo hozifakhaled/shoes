@@ -8,9 +8,10 @@ class Bodyonboardingpage extends StatelessWidget {
   const Bodyonboardingpage({
     super.key,
   });
-
+   
   @override
   Widget build(BuildContext context) {
+ 
     return Padding(
       padding: const EdgeInsets.all(16.0),
       child: Column(
@@ -25,8 +26,8 @@ class Bodyonboardingpage extends StatelessWidget {
             height: 20,
           ),
           Container(
-              width: getMediaQuery(context).width * .7,
-              height: getMediaQuery(context).height * .4,
+              width: context.width * .7,
+              height:context.height * .4,
               decoration: BoxDecoration(
                   color: Color(0xffFFFFFFEFEFEF),
                   borderRadius: BorderRadius.circular(30)),
@@ -39,8 +40,8 @@ class Bodyonboardingpage extends StatelessWidget {
                 fontWeight: FontWeight.bold,
                 fontFamily: 'inter'),
                 
-          ),   const SizedBox(
-            height: 20,
+          ),    SizedBox(
+            height: 20.h,
           ),
         const  Containergohome()
         ],
