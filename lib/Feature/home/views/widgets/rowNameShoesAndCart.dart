@@ -17,11 +17,11 @@ class rowNameShoesAndCart extends StatelessWidget {
           children: [
             Text(
               'Nike Air 321',
-              style: TextStyle(fontSize: 16.sp, fontFamily: 'inter'),
+              style: TextStyle(fontSize: 15.sp, fontFamily: 'inter'),
             ),
             Text(
               'Nike Air 321',
-              style: TextStyle(fontSize: 12.sp, color: Colors.grey),
+              style: TextStyle(fontSize: 11.sp, color: Colors.grey),
             ),
           ],
         ),
@@ -32,9 +32,12 @@ class rowNameShoesAndCart extends StatelessWidget {
               borderRadius: BorderRadius.circular(30), color: Colors.black),
           child: IconButton(
               onPressed: () {},
-              icon: Icon(
-                CupertinoIcons.cart,
-                color: Colors.white,
+              icon: Center(
+                child: Icon(
+                  CupertinoIcons.cart,
+                  size: 20.h,
+                  color: Colors.white,
+                ),
               )),
         )
       ],

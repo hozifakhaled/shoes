@@ -20,7 +20,7 @@ class ItemInHome extends StatelessWidget {
           borderRadius: BorderRadius.circular(30),
         ),
         child: Padding(
-          padding: const EdgeInsets.all(28.0),
+          padding: const EdgeInsets.all(20.0),
           child: Column(
             children: [
               Align(
@@ -32,6 +32,7 @@ class ItemInHome extends StatelessWidget {
               Image.asset(
                 'assets/images/logo_in_splas_screen.png',
                 height: context.height * .2,
+                fit: BoxFit.fill,
               ),
               const rowNameShoesAndCart()
             ],
