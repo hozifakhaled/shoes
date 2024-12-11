@@ -14,28 +14,30 @@ class ItemInHome extends StatelessWidget {
       padding: const EdgeInsets.symmetric(vertical: 10.0),
       child: Container(
         width: context.width,
-        height: context.height*.37,
-       decoration: BoxDecoration(
-        color: Color(0xffFFFFFFEFEFEF),
-        borderRadius: BorderRadius.circular(30),
-        
-       ),
-       child: Padding(
-         padding: const EdgeInsets.all(28.0),
-         child: Column(
-          
-          children: [
-            Align(
-              alignment: Alignment.centerLeft,
-              child: Text('₹ 15,999',style: TextStyle(fontSize: 16.sp,fontFamily: 'inter'),)),
-            Image.asset('assets/images/logo_in_splas_screen.png',height:context.height*.22,),
-            const rowNameShoesAndCart()
-            
-          ],
-         ),
-       ),
+        height: context.height * .37,
+        decoration: BoxDecoration(
+          color: Color(0xffFFFFFFEFEFEF),
+          borderRadius: BorderRadius.circular(30),
+        ),
+        child: Padding(
+          padding: const EdgeInsets.all(28.0),
+          child: Column(
+            children: [
+              Align(
+                  alignment: Alignment.centerLeft,
+                  child: Text(
+                    '₹ 15,999',
+                    style: TextStyle(fontSize: 16.sp, fontFamily: 'inter'),
+                  )),
+              Image.asset(
+                'assets/images/logo_in_splas_screen.png',
+                height: context.height * .2,
+              ),
+              const rowNameShoesAndCart()
+            ],
+          ),
+        ),
       ),
     );
   }
 }
-

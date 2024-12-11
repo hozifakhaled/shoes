@@ -12,21 +12,32 @@ class rowNameShoesAndCart extends StatelessWidget {
     return Row(
       mainAxisAlignment: MainAxisAlignment.spaceBetween,
       children: [
-     Column(
-      crossAxisAlignment: CrossAxisAlignment.start,
-      children: [
-      Text('Nike Air 321',style: TextStyle(fontSize: 16.sp,fontFamily: 'inter'),),
-      Text('Nike Air 321',style: TextStyle(fontSize: 12.sp,color: Colors.grey),),
-     ],) ,
-     Container(
-      width: 35.h,
-      height: 35.h,
-      decoration: BoxDecoration(
-        borderRadius: BorderRadius.circular(30),
-        color: Colors.black
-      ),
-      child: IconButton(onPressed: (){}, icon: Icon(CupertinoIcons.cart,color: Colors.white,)),
-     )
-    ],);
+        Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Text(
+              'Nike Air 321',
+              style: TextStyle(fontSize: 16.sp, fontFamily: 'inter'),
+            ),
+            Text(
+              'Nike Air 321',
+              style: TextStyle(fontSize: 12.sp, color: Colors.grey),
+            ),
+          ],
+        ),
+        Container(
+          width: 35.h,
+          height: 35.h,
+          decoration: BoxDecoration(
+              borderRadius: BorderRadius.circular(30), color: Colors.black),
+          child: IconButton(
+              onPressed: () {},
+              icon: Icon(
+                CupertinoIcons.cart,
+                color: Colors.white,
+              )),
+        )
+      ],
+    );
   }
 }
