@@ -49,4 +49,3 @@ class Bodyonboardingpage extends StatelessWidget {
     );
   }
 }
-
