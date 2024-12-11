@@ -33,7 +33,7 @@ class Containergohome extends StatelessWidget {
                color: Colors.white,
              borderRadius: BorderRadius.circular(40) 
             ),
-            child: Icon(Icons.arrow_forward),
+            child:IconButton(onPressed: (){}, icon:  Icon(Icons.arrow_forward)),
             ),
           ],
         ),
