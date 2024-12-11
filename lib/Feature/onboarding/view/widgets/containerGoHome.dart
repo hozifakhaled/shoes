@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:shoes/core/constants/funcation.dart';
+import 'package:shoes/core/routing/routes.dart';
 import 'package:shoes/main.dart';
 
 class Containergohome extends StatelessWidget {
@@ -33,7 +34,9 @@ class Containergohome extends StatelessWidget {
                color: Colors.white,
              borderRadius: BorderRadius.circular(40) 
             ),
-            child:IconButton(onPressed: (){}, icon:  Icon(Icons.arrow_forward)),
+            child:IconButton(onPressed: (){
+              Navigator.pushNamed(context, homeView);
+            }, icon:  Icon(Icons.arrow_forward)),
             ),
           ],
         ),
