@@ -18,11 +18,11 @@ class ShosesApp extends StatelessWidget {
         minTextAdapt: true,
         splitScreenMode: true,
         builder: (_, child) {
-          return const MaterialApp(
+          return  MaterialApp(
             debugShowCheckedModeBanner: false,
             title: 'Flutter Demo',
             home:Onboardingpage(),
-=======
+
             onGenerateRoute: appRouting.generateRoute,
 >>>>>>> 07e4394ba6260bf4a6dac583b452609fd05e839c
           );
