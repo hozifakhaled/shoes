@@ -13,7 +13,7 @@ class HomeViewBody extends StatelessWidget {
     return  Scaffold(
       backgroundColor: Colors.white,
       body: Padding(
-        padding:  EdgeInsets.symmetric(vertical: 43.h,horizontal: 20.w),
+        padding:  const EdgeInsets.only(top: 30,left: 25,right: 25),
         child: Column(
           children: [
             const AppbarInHome(),

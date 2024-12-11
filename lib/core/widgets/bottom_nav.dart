@@ -27,38 +27,35 @@ class _BottomNavState extends State<BottomNav> {
           topLeft: Radius.circular(20),
           topRight: Radius.circular(20),
         ),
-        child: PreferredSize(
-          preferredSize: const Size.fromHeight(40),  // تصغير الارتفاع هنا
-          child: BottomNavigationBar(
-            backgroundColor: Colors.white,
-            type: BottomNavigationBarType.fixed,
-            selectedItemColor: Colors.black,
-            unselectedItemColor: Colors.grey,
-            currentIndex: _currentIndex, 
-            onTap: (index) {
-              setState(() {
-                _currentIndex = index; 
-              });
-            },
-            items: const [
-              BottomNavigationBarItem(
-                icon: Icon(Icons.home),
-                label: '', 
-              ),
-              BottomNavigationBarItem(
-                icon: Icon(Icons.shopping_bag_outlined),
-                label: '', 
-              ),
-              BottomNavigationBarItem(
-                icon: Icon(Icons.payment),
-                label: '',    
-              ),
-              BottomNavigationBarItem(
-                icon: Icon(Icons.perm_contact_cal_outlined),
-                label: '', 
-              ),
-            ],
-          ),
+        child: BottomNavigationBar(
+          backgroundColor: Colors.white,
+          type: BottomNavigationBarType.fixed,
+          selectedItemColor: Colors.black,
+          unselectedItemColor: Colors.grey,
+          currentIndex: _currentIndex, 
+          onTap: (index) {
+            setState(() {
+              _currentIndex = index; 
+            });
+          },
+          items: const [
+            BottomNavigationBarItem(
+              icon: Icon(Icons.home),
+              label: '', 
+            ),
+            BottomNavigationBarItem(
+              icon: Icon(Icons.shopping_bag_outlined),
+              label: '', 
+            ),
+            BottomNavigationBarItem(
+              icon: Icon(Icons.payment),
+              label: '',    
+            ),
+            BottomNavigationBarItem(
+              icon: Icon(Icons.perm_contact_cal_outlined),
+              label: '', 
+            ),
+          ],
         ),
       ),
     );
