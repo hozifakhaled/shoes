@@ -21,12 +21,12 @@ class Bodyonboardingpage extends StatelessWidget {
             width: double.infinity,
           ),
           Image.asset('assets/images/nike(1) 1.png'),
-             const SizedBox(
-            height: 20,
+              SizedBox(
+            height: 30.h,
           ),
           Container(
-              width: getMediaQuery(context).width * .7,
-              height: getMediaQuery(context).height * .4,
+              width: MediaQuery.sizeOf(context).width * .7,
+              height: MediaQuery.sizeOf(context).height * .4,
               decoration: BoxDecoration(
                   color: Color(0xffFFFFFFEFEFEF),
                   borderRadius: BorderRadius.circular(30)),

@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:shoes/core/constants/funcation.dart';
+import 'package:shoes/main.dart';
 
 class Containergohome extends StatelessWidget {
   const Containergohome({
@@ -9,8 +11,8 @@ class Containergohome extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      width: getMediaQuery(context).width * .7 ,
-      height: getMediaQuery(context).height * .1 ,
+      width: MediaQuery.sizeOf(context).width * .7 ,
+      height: MediaQuery.sizeOf(context).height * .1 ,
      
       decoration: BoxDecoration(
          color: Colors.black,
@@ -24,8 +26,8 @@ class Containergohome extends StatelessWidget {
             Container(
              
             
-            height: 40 ,
-            width: 40,
+            height: 40.h ,
+            width: 40.h,
                        
             decoration: BoxDecoration(
                color: Colors.white,
