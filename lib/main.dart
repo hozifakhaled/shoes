@@ -1,15 +1,16 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:shoes/Feature/home/views/home_view.dart';
 import 'package:shoes/Feature/onboarding/views/onboardingPage.dart';
+import 'package:shoes/core/routing/app_routing.dart';
+
 
 void main() {
-  runApp(const ShosesApp());
+  runApp(ShosesApp(appRouting: AppRouting(),));
 }
 
 class ShosesApp extends StatelessWidget {
-  const ShosesApp({super.key});
-
+  const ShosesApp({super.key, required this.appRouting});
+  final AppRouting appRouting;
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
@@ -24,7 +25,7 @@ class ShosesApp extends StatelessWidget {
             home:Onboardingpage(),
 
             onGenerateRoute: appRouting.generateRoute,
->>>>>>> 07e4394ba6260bf4a6dac583b452609fd05e839c
+
           );
         });
   }

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:shoes/Feature/home/views/home_view.dart';
-import 'package:shoes/Feature/onboarding/view/onboardingPage.dart';
+
+import 'package:shoes/Feature/onboarding/views/onboardingPage.dart';
 import 'package:shoes/core/routing/routes.dart';
 
 class AppRouting {
