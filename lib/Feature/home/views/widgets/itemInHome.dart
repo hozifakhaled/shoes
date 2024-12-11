@@ -14,7 +14,7 @@ class ItemInHome extends StatelessWidget {
       padding: const EdgeInsets.symmetric(vertical: 10.0),
       child: Container(
         width: context.width,
-        height: context.height * .37,
+        height: context.height * .38,
         decoration: BoxDecoration(
           color: Color(0xffFFFFFFEFEFEF),
           borderRadius: BorderRadius.circular(30),
