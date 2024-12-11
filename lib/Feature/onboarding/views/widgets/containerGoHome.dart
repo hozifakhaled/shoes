@@ -21,8 +21,11 @@ class Containergohome extends StatelessWidget {
       child: Padding(
         padding: const EdgeInsets.all(8.0),
         child: Row(
+          
           mainAxisAlignment: MainAxisAlignment.end,
           children: [
+            Text('Continue',style: TextStyle(fontSize: 18.sp, color: Colors.white),),
+            SizedBox(width: 50.sp,),
             Container(
              
             

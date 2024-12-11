@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:shoes/Feature/home/views/home_view.dart';
-import 'package:shoes/Feature/onboarding/view/onboardingPage.dart';
+import 'package:shoes/Feature/onboarding/views/onboardingPage.dart';
 
 void main() {
   runApp(const ShosesApp());
@@ -21,7 +21,7 @@ class ShosesApp extends StatelessWidget {
           return const MaterialApp(
             debugShowCheckedModeBanner: false,
             title: 'Flutter Demo',
-            home:HomeView(),
+            home:Onboardingpage(),
           );
         });
   }
