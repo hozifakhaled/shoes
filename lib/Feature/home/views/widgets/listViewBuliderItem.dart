@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:shoes/Feature/home/views/widgets/itemInHome.dart';
+import 'package:shoes/core/routing/routes.dart';
 
 class ListViewBuliderItem extends StatelessWidget {
   const ListViewBuliderItem({
@@ -12,7 +13,11 @@ class ListViewBuliderItem extends StatelessWidget {
       child: ListView.builder(
         itemCount: 4,
         itemBuilder: (BuildContext context, int index) {
-          return const ItemInHome();
+          return InkWell(
+            onTap: () {
+              Navigator.pushNamed(context, details);
+            },
+            child: const ItemInHome());
         },
       ),
     );
