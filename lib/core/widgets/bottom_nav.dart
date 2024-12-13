@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:shoes/Feature/cart/view/cartPage.dart';
 import 'package:shoes/Feature/home/views/home_view.dart';
 
 class BottomNav extends StatefulWidget {
@@ -13,7 +14,7 @@ class _BottomNavState extends State<BottomNav> {
 
   final List<Widget> _pages = [
     const HomeView(),
-    Center(child: Text('Search Page')),
+   const Cartpage(),
     Center(child: Text('Cart Page')),
     Center(child: Text('Profile Page')),
   ];
