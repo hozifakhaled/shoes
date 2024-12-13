@@ -16,28 +16,36 @@ class DetailsViewBody extends StatelessWidget {
       body: SingleChildScrollView(
         child: SafeArea(
           child: Padding(
-            padding: EdgeInsets.symmetric(vertical: 20.h, horizontal: 30.w),
+            padding: EdgeInsets.symmetric(horizontal: 30.w),  // Responsive padding
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
+                SizedBox(height: 20.h),  // Responsive height
                 const AppbarInDetails(),
                 Align(
-                    alignment: Alignment.center,
-                    child: Image.asset(
-                      'assets/images/logo_in_splas_screen.png',
-                      width: 240.w,
-                      height: 240.h,
-                      fit: BoxFit.cover,
-                    )),
-                SizedBox(height: 20.h,),
-                Text('Men’s Shoes', style: Styles.menshoses()),
-                Text('Nike Air 321', style: Styles.titleindetails()),
-                SizedBox(height: 20.h,),
+                  alignment: Alignment.center,
+                  child: Image.asset(
+                    'assets/images/logo_in_splas_screen.png',
+                    width: 240.w,  // Responsive width
+                    height: 240.h,  // Responsive height
+                    fit: BoxFit.cover,
+                  ),
+                ),
+                SizedBox(height: 20.h),  // Responsive height
+                Text(
+                  'Men’s Shoes',
+                  style: Styles.menshoses()
+                ),
+                Text(
+                  'Nike Air 321',
+                  style: Styles.titleindetails()
+                ),
+                SizedBox(height: 20.h),  // Responsive height
                 const RateInDetails(),
-                SizedBox(height: 15.h,),
+                SizedBox(height: 15.h),  // Responsive height
                 const DescInDetails(),
-                SizedBox(height: 20.h,),
-                const LastPartInDetails()
+                SizedBox(height: 20.h),  // Responsive height
+                const LastPartInDetails(),
               ],
             ),
           ),
