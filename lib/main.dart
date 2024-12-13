@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:shoes/Feature/home/views/details_view.dart';
 import 'package:shoes/Feature/onboarding/views/onboardingPage.dart';
 import 'package:shoes/core/routing/app_routing.dart';
 
@@ -23,7 +22,7 @@ class ShosesApp extends StatelessWidget {
           return  MaterialApp(
             debugShowCheckedModeBanner: false,
             title: 'Flutter Demo',
-            home:DetailsView(),
+            home:Onboardingpage(),
 
             onGenerateRoute: appRouting.generateRoute,
 
