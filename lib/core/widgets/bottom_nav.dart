@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:shoes/Feature/cart/view/cartPage.dart';
 import 'package:shoes/Feature/home/views/home_view.dart';
@@ -45,7 +46,7 @@ class _BottomNavState extends State<BottomNav> {
               label: '', 
             ),
             BottomNavigationBarItem(
-              icon: Icon(Icons.shopping_bag_outlined),
+              icon: Icon(CupertinoIcons.cart),
               label: '', 
             ),
             BottomNavigationBarItem(
