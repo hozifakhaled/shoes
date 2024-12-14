@@ -20,11 +20,11 @@ class rowNameShoesAndCart extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Container(
-              width: 100.w,
+              width: 180.w,
               child: Text(
                 shoes.name.toString(),
                 overflow: TextOverflow.ellipsis,
-                style: TextStyle(fontSize: 12.sp, fontFamily: 'inter'),
+                style: TextStyle(fontSize: 16.sp, fontFamily: 'inter'),
               ),
             ),
             Text(

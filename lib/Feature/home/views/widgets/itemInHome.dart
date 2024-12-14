@@ -35,12 +35,15 @@ class ItemInHome extends StatelessWidget {
                 ),
               ),
               // Wrap the image with Expanded widget
-              Expanded(
+              Container(
+                height: context.height*.22,
                 child: Image.network(
                   shoes.image.toString(),
                   fit: BoxFit.fill,
                 ),
+                
               ),
+              SizedBox(height: 4.h,),
               rowNameShoesAndCart(shoes: shoes,),
             ],
           ),
