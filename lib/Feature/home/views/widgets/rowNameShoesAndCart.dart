@@ -19,14 +19,17 @@ class rowNameShoesAndCart extends StatelessWidget {
                 Column(  
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Text(
-              shoes.name.toString(),
-              overflow: TextOverflow.ellipsis,
-              style: TextStyle(fontSize: 12.sp, fontFamily: 'inter'),
+            Container(
+              width: 100.w,
+              child: Text(
+                shoes.name.toString(),
+                overflow: TextOverflow.ellipsis,
+                style: TextStyle(fontSize: 12.sp, fontFamily: 'inter'),
+              ),
             ),
             Text(
               'men’s Shoes',
-              style: TextStyle(fontSize: 11.sp, color: Colors.grey),
+              style: TextStyle(fontSize: 13.sp, color: Colors.grey),
             ),
           ],
         ),

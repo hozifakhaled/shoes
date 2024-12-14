@@ -3,16 +3,16 @@ import 'package:shoes/core/styles/text_styles.dart';
 
 class RateInDetails extends StatelessWidget {
   const RateInDetails({
-    super.key,
+    super.key, required this.rate,
   });
-
+  final String rate;
   @override
   Widget build(BuildContext context) {
-    return  Row(
-     children: [
-       Text('Rate : ', style: Styles.rsteindetails()),
-       const Text('3.5')
-     ],
+    return Row(
+      children: [
+        Text('Rate : ', style: Styles.rsteindetails()),
+        Text(rate)
+      ],
     );
   }
 }

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:shoes/Feature/home/view_model/cubit/homedata_cubit.dart';
+import 'package:shoes/Feature/home/views/details_view.dart';
 import 'package:shoes/Feature/home/views/widgets/itemInHome.dart';
 import 'package:shoes/core/routing/routes.dart';
 
@@ -21,7 +22,13 @@ class ListViewBuliderItem extends StatelessWidget {
                 final shoe = state.shoes[index];
                 return InkWell(
                   onTap: () {
-                    Navigator.pushNamed(context, details);
+                 Navigator.of(context).push(
+  MaterialPageRoute(
+    builder: (_) {
+      return DetailsView(shoes: state.shoes[index]);
+    },
+  ),
+);
                   },
                   child: ItemInHome(shoes: shoe),
                 );
