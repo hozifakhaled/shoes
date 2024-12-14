@@ -1,16 +1,17 @@
 import 'package:dio/dio.dart';
 import 'package:shoes/core/api/apiInterSaptors.dart';
 import 'package:shoes/core/api/api_consumer.dart';
+import 'package:shoes/core/api/endpoints.dart';
 
 class DioConsumer extends ApiConsumer {
   final Dio dio;
 
   DioConsumer({required this.dio}) {
-    dio.options.baseUrl = 'https://shoes-collections.p.rapidapi.com/';
+    dio.options.baseUrl = '${Endpoints.baseUrl}';
     dio.interceptors.add(Apiintersaptors());
     dio.options.headers = {
-      "x-rapidapi-host": "shoes-collections.p.rapidapi.com ",
-      "x-rapidapi-key": "01ade6c6a7msh53a22f4510a56eap1647f2jsnba32284e02ff"
+      "x-rapidapi-host": "shoes-collections.p.rapidapi.com",
+      "x-rapidapi-key": "81c952cb1bmshfdb1adee45489cap1d9d1djsnea9683d132c0"
     };
     dio.interceptors.add(LogInterceptor(
         request: true,
@@ -36,7 +37,7 @@ class DioConsumer extends ApiConsumer {
     try {
       final response =
           await dio.get(path, data: data, queryParameters: queryParams);
-      return response.data['meals'];
+     return response.data;
     } on Exception catch (e) {
       // TODO
     }

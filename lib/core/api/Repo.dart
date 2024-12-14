@@ -1,20 +1,24 @@
-
 import 'package:shoes/core/api/dio_consumer.dart';
 import 'package:shoes/core/models/shoes.dart';
 
 class Recpiesrepo {
-  final  DioConsumer dioConsumer;
+  final DioConsumer dioConsumer;
 
   Recpiesrepo({required this.dioConsumer});
 
-  Future<List<Shoes>> getRecpies(String categories) async {
-    final recpies = await dioConsumer.get('shoes');
-    List<Shoes> data = [];
-    
-      for (var recpie in recpies) {
-        data.add(Shoes.fromJson(recpie));
+  Future<List<Shoes>> getRecpies() async {
+    try {
+      final response = await dioConsumer.get('shoes');
+      if (response is List) {
+        List<Shoes> shoesList = response
+            .map((shoeJson) => Shoes.fromJson(shoeJson))
+            .toList();
+        return shoesList;
+      } else {
+        throw Exception('Invalid response format');
       }
-      return data;
-  
+    } catch (e) {
+      rethrow;
+    }
   }
 }

@@ -2,10 +2,14 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:shoes/Feature/home/views/widgets/rowNameShoesAndCart.dart';
 import 'package:shoes/core/constants/contextExtension.dart';
+import 'package:shoes/core/models/shoes.dart';
 
 class ItemInHome extends StatelessWidget {
+  final Shoes shoes;
+
   const ItemInHome({
     super.key,
+    required this.shoes,
   });
 
   @override
@@ -16,7 +20,7 @@ class ItemInHome extends StatelessWidget {
         width: context.width,
         height: context.height * .38,
         decoration: BoxDecoration(
-          color: Color(0xffFFFFFFEFEFEF),
+          color: const Color(0xffefefef),
           borderRadius: BorderRadius.circular(30),
         ),
         child: Padding(
@@ -24,17 +28,20 @@ class ItemInHome extends StatelessWidget {
           child: Column(
             children: [
               Align(
-                  alignment: Alignment.centerLeft,
-                  child: Text(
-                    '₹ 15,999',
-                    style: TextStyle(fontSize: 16.sp, fontFamily: 'inter'),
-                  )),
-              Image.asset(
-                'assets/images/logo_in_splas_screen.png',
-                height: context.height * .2,
-                fit: BoxFit.fill,
+                alignment: Alignment.centerLeft,
+                child: Text(
+                 '₹${shoes.price.toString()}', // Added a dollar sign for price formatting
+                  style: TextStyle(fontSize: 16.sp, fontFamily: 'inter'),
+                ),
               ),
-              const rowNameShoesAndCart()
+              // Wrap the image with Expanded widget
+              Expanded(
+                child: Image.network(
+                  shoes.image.toString(),
+                  fit: BoxFit.fill,
+                ),
+              ),
+              rowNameShoesAndCart(shoes: shoes,),
             ],
           ),
         ),

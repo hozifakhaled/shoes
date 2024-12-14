@@ -1,26 +1,31 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:shoes/core/models/shoes.dart';
 
 class rowNameShoesAndCart extends StatelessWidget {
   const rowNameShoesAndCart({
-    super.key,
+    super.key, 
+    required this.shoes,
   });
+
+  final Shoes shoes;
 
   @override
   Widget build(BuildContext context) {
     return Row(
       mainAxisAlignment: MainAxisAlignment.spaceBetween,
       children: [
-        Column(
+                Column(  
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Text(
-              'Nike Air 321',
-              style: TextStyle(fontSize: 15.sp, fontFamily: 'inter'),
+              shoes.name.toString(),
+              overflow: TextOverflow.ellipsis,
+              style: TextStyle(fontSize: 12.sp, fontFamily: 'inter'),
             ),
             Text(
-              'Nike Air 321',
+              'men’s Shoes',
               style: TextStyle(fontSize: 11.sp, color: Colors.grey),
             ),
           ],
@@ -29,17 +34,20 @@ class rowNameShoesAndCart extends StatelessWidget {
           width: 35.h,
           height: 35.h,
           decoration: BoxDecoration(
-              borderRadius: BorderRadius.circular(30), color: Colors.black),
+            borderRadius: BorderRadius.circular(30), 
+            color: Colors.black
+          ),
           child: IconButton(
-              onPressed: () {},
-              icon: Center(
-                child: Icon(
-                  CupertinoIcons.cart,
-                  size: 20.h,
-                  color: Colors.white,
-                ),
-              )),
-        )
+            onPressed: () {},
+            icon: Center(
+              child: Icon(
+                CupertinoIcons.cart,
+                size: 20.h,
+                color: Colors.white,
+              ),
+            ),
+          ),
+        ),
       ],
     );
   }
