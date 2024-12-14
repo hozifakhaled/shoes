@@ -41,12 +41,13 @@ dependencies:
   dio: ^5.7.0
   bloc: ^8.1.4
   flutter_bloc: ^8.1.6
-  stripe: ^4.11.0
   url_launcher: ^6.3.1
   hive: ^2.2.3
   hive_flutter: ^1.1.0
   dartz: ^0.10.1
   pretty_logger: ^1.0.0
+  device_preview: ^1.2.0
+  shared_preferences: ^2.3.3
 
 
 dev_dependencies:
