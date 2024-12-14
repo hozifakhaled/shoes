@@ -40,7 +40,7 @@ class DetailsViewBody extends StatelessWidget {
                  RateInDetails(rate:shoes.rating.toString() ,),
                 SizedBox(height: 15.h), // Responsive height
                  DescInDetails(text: shoes.description.toString(),),
-                SizedBox(height: 60.h), // Responsive height
+                SizedBox(height: 20.h), // Responsive height
                  LastPartInDetails(price: shoes.price.toString(),),
               ],
             ),
