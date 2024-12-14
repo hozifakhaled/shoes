@@ -11,7 +11,7 @@ class DioConsumer extends ApiConsumer {
     dio.interceptors.add(Apiintersaptors());
     dio.options.headers = {
       "x-rapidapi-host": "shoes-collections.p.rapidapi.com",
-      "x-rapidapi-key": "81c952cb1bmshfdb1adee45489cap1d9d1djsnea9683d132c0"
+      "x-rapidapi-key": "d1782f2f76msh073ae563caa588ep12972ejsn7587ef27786e"
     };
     dio.interceptors.add(LogInterceptor(
         request: true,
