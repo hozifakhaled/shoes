@@ -47,5 +47,13 @@
 		<true/>
 		<key>UIStatusBarHidden</key>
 		<false/>
+		<key>LSApplicationQueriesSchemes</key>
+    <array>
+        <string>https</string>
+        <string>http</string>
+        <string>fb</string> <!-- يسمح بفتح روابط Facebook -->
+        <string>whatsapp</string> <!-- يسمح بفتح روابط WhatsApp -->
+		<string>googlegmail</string>
+    </array>
 	</dict>
 </plist>

@@ -1,4 +1,26 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
+<queries>
+        <!-- للوصول إلى المتصفح أو التطبيقات التي تدعم الروابط -->
+        <intent>
+        <action android:name="android.intent.action.VIEW" />
+        <data android:scheme="http" />
+        </intent>
+        <intent>
+        <action android:name="android.intent.action.VIEW" />
+        <data android:scheme="https" />
+        </intent>
+
+    <!-- السماح بفتح تطبيق Gmail -->
+        <package android:name="com.google.android.gm" />
+        <intent>
+        <action android:name="android.intent.action.VIEW" />
+        <data android:scheme="https" />
+        </intent>
+        <!-- للوصول إلى WhatsApp -->
+        <package android:name="com.whatsapp" />
+        <!-- للوصول إلى Facebook -->
+        <package android:name="com.facebook.katana" />
+    </queries>
     <application
         android:label="shoes"
         android:name="${applicationName}"

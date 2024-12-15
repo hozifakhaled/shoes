@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:shoes/core/routing/routes.dart';
 import 'package:shoes/core/constants/contextExtension.dart';
+import 'package:shoes/core/url_launcher/url_launcher.dart';
 import 'package:shoes/main.dart';
 
 class Containergohome extends StatelessWidget {
@@ -12,38 +13,41 @@ class Containergohome extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      width: context.width * .7 ,
-      height: context.height * .1 ,
-     
+      width: context.width * .7,
+      height: context.height * .1,
       decoration: BoxDecoration(
-         color: Colors.black,
-       borderRadius: BorderRadius.circular(40) 
-      ),
+          color: Colors.black, borderRadius: BorderRadius.circular(40)),
       child: Padding(
         padding: const EdgeInsets.all(8.0),
         child: Row(
-          
           mainAxisAlignment: MainAxisAlignment.end,
           children: [
-            Text('Continue',style: TextStyle(fontSize: 18.sp, color: Colors.white),),
-            SizedBox(width: 50.sp,),
-            Container(
-             
-            
-            height: 40.h ,
-            width: 40.h,
-                       
-            decoration: BoxDecoration(
-               color: Colors.white,
-             borderRadius: BorderRadius.circular(40) 
+            Text(
+              'Continue',
+              style: TextStyle(fontSize: 18.sp, color: Colors.white),
             ),
-            child:IconButton(onPressed: (){
-              Navigator.pushNamed(context, bottomnav);
-            }, icon:  Icon(Icons.arrow_forward)),
+            SizedBox(
+              width: 50.sp,
+            ),
+            Container(
+              height: 40.h,
+              width: 40.h,
+              decoration: BoxDecoration(
+                  color: Colors.white, borderRadius: BorderRadius.circular(40)),
+              child: IconButton(
+                  onPressed: () {
+                         Navigator.pushNamed(context, bottomnav);
+
+          
+                  },
+                  icon: Icon(Icons.arrow_forward)),
             ),
           ],
         ),
       ),
     );
   }
+
+
+  
 }
