@@ -2,6 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:shoes/Feature/cart/view/cartPage.dart';
 import 'package:shoes/Feature/home/views/home_view.dart';
+import 'package:shoes/Feature/stripe_payment/views/stripe_payment_view.dart';
 
 class BottomNav extends StatefulWidget {
   const BottomNav({super.key});
@@ -16,7 +17,7 @@ class _BottomNavState extends State<BottomNav> {
   final List<Widget> _pages = [
     const HomeView(),
    const Cartpage(),
-    Center(child: Text('Cart Page')),
+    const StripePaymentView(),
     Center(child: Text('Profile Page')),
   ];
 

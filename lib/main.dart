@@ -1,10 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:flutter_stripe/flutter_stripe.dart';
 import 'package:shoes/Feature/onboarding/views/onboardingPage.dart';
+import 'package:shoes/Feature/stripe_payment/views/widgets/payment_keys.dart';
 import 'package:shoes/core/routing/app_routing.dart';
 
 
 void main() {
+  Stripe.publishableKey=PaymentKeys.publisherKey;
   runApp(ShosesApp(appRouting: AppRouting(),));
 }
 
