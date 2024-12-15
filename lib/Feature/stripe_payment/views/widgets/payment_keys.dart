@@ -1,0 +1,4 @@
+abstract class PaymentKeys {
+  static const publisherKey='pk_test_51QQ1JEHlwy3C5iuRvuKfdi0jczC7DBFdta7rWBFWx18LltCQuKRwIfESf1jrvB7haWRrDByHnMv4DSj2cK1YrHqT00I2pUSMZf';
+    static const secretKey='sk_test_51QQ1JEHlwy3C5iuRbCDVoM2KPf3BY8gWiwpZgZqubE0AeOCM4SctUhP62ncSBKfB75cw7ZGAgSEV0SMb6FrY5wWA000Ze8C62I';
+}
