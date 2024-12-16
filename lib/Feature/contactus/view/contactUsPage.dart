@@ -1,7 +1,7 @@
 // ignore_for_file: file_names
 
 import 'package:flutter/material.dart';
-import 'package:shoes/Feature/contactus/view/widgets/BodyContactUs.dart';
+import 'package:shoes/Feature/contactus/view/widgets/bodyContactUs.dart';
 
 
 class Contactuspage extends StatelessWidget {

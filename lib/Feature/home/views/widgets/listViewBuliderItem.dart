@@ -2,9 +2,12 @@
 
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+
 import 'package:shoes/Feature/home/view_model/cubit/homedata_cubit.dart';
 import 'package:shoes/Feature/home/views/details_view.dart';
 import 'package:shoes/Feature/home/views/widgets/itemInHome.dart';
+import 'package:shoes/Feature/home/views/widgets/shimmerInItemHome.dart';
+
 
 class ListViewBuliderItem extends StatelessWidget {
   const ListViewBuliderItem({super.key});
@@ -14,7 +17,7 @@ class ListViewBuliderItem extends StatelessWidget {
     return BlocBuilder<HomedataCubit, HomedataState>(
       builder: (context, state) {
         if (state is HomedataLoading) {
-          return const Center(child: CircularProgressIndicator());
+          return const Shimmerintemhome();
         } else if (state is HomedataLoaded) {
           return Expanded(
             child: ListView.builder(
