@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:shoes/Feature/cart/view/cartPage.dart';
+import 'package:shoes/Feature/contactus/view/contactUsPage.dart';
 import 'package:shoes/Feature/home/views/home_view.dart';
 import 'package:shoes/Feature/stripe_payment/views/stripe_payment_view.dart';
 
@@ -18,7 +19,7 @@ class _BottomNavState extends State<BottomNav> {
     const HomeView(),
    const Cartpage(),
     const StripePaymentView(),
-    Center(child: Text('Profile Page')),
+   const Contactuspage(),
   ];
 
   @override
