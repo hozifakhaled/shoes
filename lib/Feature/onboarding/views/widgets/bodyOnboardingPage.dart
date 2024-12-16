@@ -1,8 +1,9 @@
+// ignore_for_file: file_names
+
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:shoes/Feature/onboarding/views/widgets/containerGoHome.dart';
 import 'package:shoes/core/constants/contextExtension.dart';
-import 'package:shoes/main.dart';
 
 class Bodyonboardingpage extends StatelessWidget {
   const Bodyonboardingpage({
@@ -29,7 +30,7 @@ class Bodyonboardingpage extends StatelessWidget {
               width: context.width * .7,
               height: context.height * .4,
               decoration: BoxDecoration(
-                  color: Color(0xffFFFFFFEFEFEF),
+                  color: const Color(0xffffffffefefef),
                   borderRadius: BorderRadius.circular(30)),
               child: Image.asset('assets/images/logo_in_splas_screen.png')),
            

@@ -7,7 +7,7 @@ class DioConsumer extends ApiConsumer {
   final Dio dio;
 
   DioConsumer({required this.dio}) {
-    dio.options.baseUrl = '${Endpoints.baseUrl}';
+    dio.options.baseUrl = Endpoints.baseUrl;
     dio.interceptors.add(Apiintersaptors());
     dio.options.headers = {
       "x-rapidapi-host": "shoes-collections.p.rapidapi.com",

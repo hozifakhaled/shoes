@@ -1,3 +1,5 @@
+// ignore_for_file: file_names
+
 import 'package:flutter/material.dart';
 import 'package:shoes/Feature/onboarding/views/widgets/bodyOnboardingPage.dart';
 
@@ -6,9 +8,9 @@ class Onboardingpage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+    return const Scaffold(
       backgroundColor: Colors.white,
-      body:const Bodyonboardingpage(),
+      body:Bodyonboardingpage(),
     );
   }
 }

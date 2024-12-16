@@ -1,8 +1,8 @@
+// ignore_for_file: file_names
+
 import 'package:flutter/material.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:shoes/Feature/contactus/view/widgets/BodyContactUs.dart';
-import 'package:shoes/Feature/contactus/view/widgets/iconContactUs.dart';
-import 'package:shoes/core/url_launcher/url_launcher.dart';
+
 
 class Contactuspage extends StatelessWidget {
   const Contactuspage({super.key});

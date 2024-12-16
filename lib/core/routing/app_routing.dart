@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:shoes/Feature/home/views/details_view.dart';
 import 'package:shoes/Feature/onboarding/views/onboardingPage.dart';
-import 'package:shoes/core/models/shoes.dart';
 import 'package:shoes/core/routing/routes.dart';
 import 'package:shoes/core/widgets/bottom_nav.dart';
 

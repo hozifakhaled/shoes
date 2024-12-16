@@ -1,13 +1,11 @@
+// ignore_for_file: file_names
+
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:shoes/Feature/cart/view/widgets/appBarCartPage.dart';
 import 'package:shoes/Feature/cart/view/widgets/buttonBuyNow.dart';
-import 'package:shoes/Feature/cart/view/widgets/columnNameinItemCart.dart';
-import 'package:shoes/Feature/cart/view/widgets/columnPriceCart.dart';
-import 'package:shoes/Feature/cart/view/widgets/itemCart.dart';
 import 'package:shoes/Feature/cart/view/widgets/listViewbuilderItemsCart.dart';
 import 'package:shoes/Feature/cart/view/widgets/rowPriceInCart.dart';
-import 'package:shoes/core/constants/contextExtension.dart';
 
 class BodyCartPage extends StatelessWidget {
   const BodyCartPage({

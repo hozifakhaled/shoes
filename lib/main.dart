@@ -31,7 +31,7 @@ class ShosesApp extends StatelessWidget {
         return MaterialApp(
           debugShowCheckedModeBanner: false,
           title: 'Flutter Demo',
-          home: Onboardingpage(),
+          home: const Onboardingpage(),
           onGenerateRoute: appRouting.generateRoute,
         );
       },

@@ -1,9 +1,10 @@
+// ignore_for_file: file_names
+
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:shoes/Feature/home/view_model/cubit/homedata_cubit.dart';
 import 'package:shoes/Feature/home/views/details_view.dart';
 import 'package:shoes/Feature/home/views/widgets/itemInHome.dart';
-import 'package:shoes/core/routing/routes.dart';
 
 class ListViewBuliderItem extends StatelessWidget {
   const ListViewBuliderItem({super.key});

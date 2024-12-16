@@ -1,3 +1,5 @@
+// ignore_for_file: file_names, camel_case_types
+
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:shoes/Feature/cart/view/widgets/buttonIncrementAndDecrement.dart';
@@ -23,7 +25,7 @@ class columnPriceCart extends StatelessWidget {
         Row(
           spacing: 15.w,
           children: [
-            buttonIncrementAndDecrement(math:  '+'),
+            const buttonIncrementAndDecrement(math:  '+'),
     
              Text(
           '4',
@@ -32,7 +34,7 @@ class columnPriceCart extends StatelessWidget {
               fontWeight: FontWeight.w500,
               fontFamily: 'inter'),
         ),
-            buttonIncrementAndDecrement( math: '-',)
+            const buttonIncrementAndDecrement( math: '-',)
           ],
         )
       ],

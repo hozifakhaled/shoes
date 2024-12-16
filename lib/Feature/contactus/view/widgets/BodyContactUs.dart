@@ -1,3 +1,5 @@
+// ignore_for_file: file_names
+
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:shoes/Feature/contactus/view/widgets/iconContactUs.dart';
@@ -47,7 +49,7 @@ class BodyContactUs extends StatelessWidget {
           ),
           IconContactUs(
             onPressed: () async {
-              await UrlLauncher().facebookPageId;
+              UrlLauncher().facebookPageId;
             },
             text: 'Nike',
             icon: Icon(

@@ -1,3 +1,5 @@
+// ignore_for_file: file_names
+
 import 'package:shoes/core/api/dio_consumer.dart';
 import 'package:shoes/core/models/shoes.dart';
 

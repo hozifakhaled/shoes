@@ -1,3 +1,5 @@
+// ignore_for_file: file_names
+
 import 'package:flutter/material.dart';
 import 'package:shoes/Feature/cart/view/widgets/itemCart.dart';
 import 'package:shoes/core/constants/contextExtension.dart';
@@ -15,9 +17,9 @@ class ListViewbuilderItemsCart extends StatelessWidget {
        
        itemCount: 2,
        itemBuilder: (BuildContext context, int index) {
-         return Padding(
-           padding: const EdgeInsets.symmetric(vertical: 10.0),
-           child: const itemCart(),
+         return const Padding(
+           padding: EdgeInsets.symmetric(vertical: 10.0),
+           child: itemCart(),
          ) ;
        },
      ),

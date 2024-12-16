@@ -1,9 +1,9 @@
+// ignore_for_file: file_names
+
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:shoes/core/routing/routes.dart';
 import 'package:shoes/core/constants/contextExtension.dart';
-import 'package:shoes/core/url_launcher/url_launcher.dart';
-import 'package:shoes/main.dart';
 
 class Containergohome extends StatelessWidget {
   const Containergohome({
@@ -40,7 +40,7 @@ class Containergohome extends StatelessWidget {
 
           
                   },
-                  icon: Icon(Icons.arrow_forward)),
+                  icon: const Icon(Icons.arrow_forward)),
             ),
           ],
         ),
