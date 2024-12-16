@@ -6,8 +6,7 @@ import 'package:shoes/Feature/stripe_payment/views/widgets/payment_keys.dart';
 abstract class PaymentFunction {
   static Future<void> managepayment(int amount, String currency) async {
     try {
-      String clientSecret =
-          await _getClientSecret((amount * 100).toString(), currency);
+      String clientSecret = await _getClientSecret((amount * 100).toString(), currency);
 
       await _initializePaymentSheet(clientSecret);
 
@@ -31,7 +30,7 @@ abstract class PaymentFunction {
       paymentSheetParameters: SetupPaymentSheetParameters(
         paymentIntentClientSecret: clientSecret,
         merchantDisplayName: 'Abdelhamid',
-        style: ThemeMode.system, 
+        style: ThemeMode.system,
       ),
     );
   }
@@ -44,12 +43,12 @@ abstract class PaymentFunction {
         'https://api.stripe.com/v1/payment_intents',
         options: Options(
           headers: {
-            'Authorization': 'Bearer ${PaymentKeys.secretKey}', 
+            'Authorization': 'Bearer ${PaymentKeys.secretKey}',
             'Content-Type': 'application/x-www-form-urlencoded',
           },
         ),
         data: {
-          'amount': amount, 
+          'amount': amount,
           'currency': currency,
         },
       );
