@@ -26,11 +26,14 @@ class DetailsViewBody extends StatelessWidget {
                 const AppbarInDetails(),
                 Align(
                   alignment: Alignment.center,
-                  child: Image.network(
-                   shoes.image.toString(),
-                    width: 240.w, // Responsive width
-                    height: 240.h, // Responsive height
-                    fit: BoxFit.cover,
+                  child: Hero(
+                    tag: shoes.id.toString(),
+                    child: Image.network(
+                     shoes.image.toString(),
+                      width: 240.w, // Responsive width
+                      height: 240.h, // Responsive height
+                      fit: BoxFit.cover,
+                    ),
                   ),
                 ),
                 SizedBox(height: 20.h), // Responsive height
